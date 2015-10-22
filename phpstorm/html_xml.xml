@@ -1,0 +1,24 @@
+<templateSet group="html/xml">
+  <template name="textform" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$name$&quot;&gt;$clientname$:&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; name=&quot;$name$&quot; id=&quot;$name$&quot; class=&quot;form-control&quot; value=&quot;{{ old('$name$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Text Inputfield" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="clientname" expression="" defaultValue="Name" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="submitform" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$END$&lt;/button&gt;&#10;&lt;/div&gt;" description="Submit a form" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="selectform" value="&lt;select name=&quot;$name$&quot; class=&quot;form-control&quot;&gt;&#10;    &lt;option value=&quot;$value$&quot; selected&gt;$readable$&lt;/option&gt;&#10;&lt;/select&gt;" description="Select Input" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="readable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
